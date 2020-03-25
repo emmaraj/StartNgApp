@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAD6D6"
+    tools:context=".FirstFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="@string/my_logo"
+        android:src="@drawable/download"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/hello_first_fragment"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <!-- Full Name Label Section-->
+    <TextView
+        android:id="@+id/textViewNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/lblFullName"
+        android:textSize="@dimen/myTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHello" />
+
+    <!-- Full Name Text Section-->
+    <TextView
+        android:id="@+id/textViewNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/txtName"
+        android:textSize="@dimen/myTextSize"
+        app:layout_constraintStart_toEndOf="@id/textViewNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHello" />
+
+    <!-- User Name Label Section-->
+    <TextView
+        android:id="@+id/textViewUserNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/lblUserName"
+        android:textSize="@dimen/myTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNameLabel" />
+
+    <!-- User Name Text Section-->
+    <TextView
+        android:id="@+id/textViewUserNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/txtUserName"
+        android:textSize="@dimen/myTextSize"
+        app:layout_constraintStart_toEndOf="@id/textViewUserNameLabel"
+        app:layout_constraintTop_toBottomOf="@id/textViewNameText" />
+
+    <!-- Email Label Section-->
+    <TextView
+        android:id="@+id/textViewEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/lblEmail"
+        android:textSize="@dimen/myTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserNameLabel" />
+
+    <!-- Email Text Section-->
+    <TextView
+        android:id="@+id/textViewEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/txtEmailAddress"
+        android:textSize="@dimen/myTextSize"
+        app:layout_constraintStart_toEndOf="@id/textViewEmailLabel"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserNameText" />
+
+    <!-- Tracks Label Section-->
+    <TextView
+        android:id="@+id/textViewTrackLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/lblTracks"
+        android:textSize="@dimen/myTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailLabel" />
+    <!-- Tracks Text Section-->
+    <TextView
+        android:id="@+id/textViewTrackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/txtTracks"
+        android:textSize="@dimen/myTextSize"
+        app:layout_constraintStart_toEndOf="@id/textViewTrackLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailLabel" />
+
+    <!-- Courses Label Section-->
+    <TextView
+        android:id="@+id/textViewCoursesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/lblTracks"
+        android:textSize="@dimen/myTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTrackLabel" />
+    <!-- Courses Text Section-->
+    <TextView
+        android:id="@+id/textViewCoursesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/txtCourse"
+        android:textSize="@dimen/myTextSize"
+        app:layout_constraintStart_toEndOf="@id/textViewCoursesLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTrackLabel" />
+
+    <!-- Reason Label Section-->
+    <TextView
+        android:id="@+id/textViewReasonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/lblReason"
+        android:textSize="@dimen/myTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCoursesLabel" />
+    <!-- Reason Text Section-->
+    <TextView
+        android:id="@+id/textViewReasonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin_start"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/txtReason"
+        android:textSize="@dimen/myTextSize"
+        app:layout_constraintStart_toEndOf="@id/textViewReasonLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCoursesLabel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
